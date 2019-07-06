@@ -1,16 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Воркадиум</title>
 </head>
 
 <body>
 	<div class="wrapper">
+		<header class="header">
+			<a href="/" class="logo">
+				<img src="" alt="Лого Воркадиум" class="logo__img">
+			</a>
 
+			<div class="contacts">
+				<a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
+				<a href="#" class="contacts__timework">График работы</a>
+			</div><!-- .contacts -->
+		</header>
+
+		<div class="center">
+			<aside class="sidebar">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item active">
+							<a href="#" class="menu__link menu__link--triangle">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link menu__link--star">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link menu__link--wallet">Тарифы</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+			<main class="content">
+				<section class="features">
+					<h2 class="section-title">Особенности</h2>
+
+					<ul class="cards">
+						<li class="cards__item">
+							<div class="cards__img cards__img--flower"></div>
+							<h3 class="cards__title">уникальность</h3>
+							<p class="cards__subs">Создан для вашего комфортного отдыха</p>
+							<ul class="cards__list">
+								<li class="cards__plus">Кофе/чай</li>
+								<li class="cards__plus">Шкаф (5 кг)</li>
+								<li class="cards__plus">Рабочее место</li>
+							</ul>
+						</li>
+
+						<li class="cards__item">
+							<div class="cards__img cards__img--star"></div>
+							<h3 class="cards__title">премиум-класс</h3>
+							<p class="cards__subs">Для любителей  хороших впечатлений</p>
+							<ul class="cards__list">
+								<li class="cards__plus">Обед+кофе</li>
+								<li class="cards__plus">Шкаф (10 кг)</li>
+								<li class="cards__plus">Детское кресло</li>
+							</ul>
+						</li>
+
+						<li class="cards__item">
+							<div class="cards__img cards__img--palette"></div>
+							<h3 class="cards__title">лакшери-стулья</h3>
+							<p class="cards__subs">Всё самое лучшее  и незабываемое</p>
+							<ul class="cards__list">
+								<li class="cards__plus">Джакузи</li>
+								<li class="cards__plus">Шкаф (15 кг)</li>
+								<li class="cards__plus">Табуретка</li>
+							</ul>
+						</li>
+					</ul><!-- .cards -->
+				</section><!-- .future -->
+
+				<section class="news">
+					<h2 class="section-title">Последние новости</h2>
+
+					<ul class="review">
+						<li class="review__item">
+							<img src=".." alt="avatar" class="review__img">
+							<div class="review__block">
+								<span class="review__date">12.10.2016</span>
+								<h3 class="review__title">Чёрная дыра скидок!</h3>
+								<p class="review__text">
+									Ключевым технологическим партнером GrowUp является дата-центр Миран, расположенный всего лишь в 500 метрах от здания, а значит, скорость интернета будет стабильной в любое время суток. Коворкинг работает в формате 24/7.Используйте шкаф для хранения личных вещей.
+								</p>
+							</div><!-- .review__block -->
+						</li>
+
+						<li class="review__item">
+							<img src=".." alt="avatar" class="review__img">
+							<div class="review__block">
+								<span class="review__date">01.02.2016</span>
+								<h3 class="review__title">Заражай друзей, получай призы!</h3>
+								<p class="review__text">
+									Быть частью сообщества сильных, грамотных и увлеченных своим делом профессионалов - вдохновляет выходить на новые уровни развития. Регулярно в коворкинге проводятся лекции, мастер-классы, встречи с инвесторами или менторами для резидентов.
+								</p>
+							</div><!-- .review__block -->
+						</li>
+
+						<li class="review__item">
+							<img src=".." alt="avatar" class="review__img">
+							<div class="review__block">
+								<span class="review__date">22.12.2015</span>
+								<h3 class="review__title">Новое рабочее место для бизнесменов.</h3>
+								<p class="review__text">
+									Для резидентов коворкинга оборудована не только рабочая зона, но и зона отдыха. Она включает в себя: кухонную зону и зону релакса.
+									Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой, чайником, кофе машиной, посудой.
+								</p>
+							</div><!-- .review__block -->
+						</li>
+					</ul>
+				</section><!-- .news -->
+
+				<section class="pagination">
+					<div class="pagination__text">Страница 1 из 7</div>
+					<div class="pagination__navbar">
+						<a href="#" class="pagination__control disabled">&lsaquo;</a>
+						<ul class="pagination__list">
+							<li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+							<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+							<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+							<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+							<li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+							<li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+							<li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
+						</ul>
+						<a href="#" class="pagination__control">&rsaquo;</a>
+					</div><!-- .pagination__navbar -->
+				</section><!-- .pagination -->
+			</main>
+		</div><!-- .center -->
+
+		<footer class="footer">
+			<div class="info">
+				<p class="info__text">
+					Сделано с любовью и старанием на курсе «HTML + CSS» в 
+					<a href="https://loftschool.com/" class="info__link">LoftSchool</a>
+				</p>
+			</div><!-- .info -->
+
+			<a href="/" class="logo">
+				<img src="" alt="Лого Воркадиум" class="logo__img">
+			</a>
+
+			<div class="social">
+				<h3 class="social__title">Наши социальные сети</h3>
+
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="#" class="social__link social__link--vk"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link--fb"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link--gplus"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link--tw"></a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link--email"></a>
+					</li>
+				</ul>
+			</div><!-- .social -->
+		</footer>
 	</div><!-- .wrapper -->
 </body>
 
