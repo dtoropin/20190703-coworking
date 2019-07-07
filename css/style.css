@@ -180,30 +180,32 @@ body {
 }
 .menu__link {
   padding: 5px 0 5px 40px;
+  background: url(../image/menu_icon_sprites.png);
+  background-repeat: no-repeat;
 }
 .menu__link:hover {
   color: #000;
 }
 .menu__link--triangle {
-  background: url(../image/triangle_icon.png) no-repeat center left;
+  background-position: -7px -4px;
 }
 .menu__link--star {
-  background: url(../image/star_icon.png) no-repeat center left;
+  background-position: -7px -122px;
 }
 .menu__link--wallet {
-  background: url(../image/wallet_icon.png) no-repeat center left;
+  background-position: -7px -62px;
 }
 .menu__item.active > .menu__link--triangle,
 .menu__link--triangle:hover {
-  background: url(../image/triangle_icon_hover.png) no-repeat center left;
+  background-position: -7px -33px;
 }
 .menu__item.active > .menu__link--star,
 .menu__link--star:hover {
-  background: url(../image/star_icon_hover.png) no-repeat center left;
+  background-position: -7px -154px;
 }
 .menu__item.active > .menu__link--wallet,
 .menu__link--wallet:hover {
-  background: url(../image/wallet_icon_hover.png) no-repeat center left;
+  background-position: -7px -92px;
 }
 .features__list {
   overflow: hidden;
