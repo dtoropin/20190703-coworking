@@ -144,6 +144,9 @@ body {
 .menu__link {
   padding: 5px 0 5px 40px;
 }
+.menu__link:hover {
+  color: #000;
+}
 .menu__link--triangle {
   background: url(../image/triangle_icon.png) no-repeat center left;
 }
@@ -152,6 +155,18 @@ body {
 }
 .menu__link--wallet {
   background: url(../image/wallet_icon.png) no-repeat center left;
+}
+.menu__item.active > .menu__link--triangle,
+.menu__link--triangle:hover {
+  background: url(../image/triangle_icon_hover.png) no-repeat center left;
+}
+.menu__item.active > .menu__link--star,
+.menu__link--star:hover {
+  background: url(../image/star_icon_hover.png) no-repeat center left;
+}
+.menu__item.active > .menu__link--wallet,
+.menu__link--wallet:hover {
+  background: url(../image/wallet_icon_hover.png) no-repeat center left;
 }
 .features__list {
   overflow: hidden;
@@ -278,16 +293,14 @@ body {
 .pagination__item.active {
   background-color: #27273e;
   border-radius: 3px;
-  color: #fff;
+  color: #ec1e79;
 }
 .pagination__link {
   display: block;
   padding: 3px 8px;
-  border: 1px solid transparent;
 }
 .pagination__link:hover {
-  border-radius: 3px;
-  border: 1px solid #27273e;
+  color: #ec1e79;
 }
 .info {
   float: left;
