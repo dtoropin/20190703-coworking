@@ -314,40 +314,29 @@ body {
 .social__item {
   display: inline-block;
   margin-right: 13px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.social__item:hover {
+  background: #ec1e79;
 }
 .social__link {
   display: block;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
 }
 .social__link--vk {
-  background: url(../image/vk_icon.png) no-repeat center, #ffffff;
-}
-.social__link--vk:hover {
-  background: url(../image/vk_icon.png) no-repeat center, #ec1e79;
+  background: url(../image/vk_icon.png) no-repeat center;
 }
 .social__link--fb {
-  background: url(../image/fb_icon.png) no-repeat center, #ffffff;
-}
-.social__link--fb:hover {
-  background: url(../image/fb_icon.png) no-repeat center, #ec1e79;
+  background: url(../image/fb_icon.png) no-repeat center;
 }
 .social__link--gplus {
-  background: url(../image/gplus_icon.png) no-repeat center, #ffffff;
-}
-.social__link--gplus:hover {
-  background: url(../image/gplus_icon.png) no-repeat center, #ec1e79;
+  background: url(../image/gplus_icon.png) no-repeat center;
 }
 .social__link--tw {
-  background: url(../image/tw_icon.png) no-repeat center, #ffffff;
-}
-.social__link--tw:hover {
-  background: url(../image/tw_icon.png) no-repeat center, #ec1e79;
+  background: url(../image/tw_icon.png) no-repeat center;
 }
 .social__link--email {
-  background: url(../image/email_icon.png) no-repeat center, #ffffff;
-}
-.social__link--email:hover {
-  background: url(../image/email_icon.png) no-repeat center, #ec1e79;
+  background: url(../image/email_icon.png) no-repeat center;
 }
