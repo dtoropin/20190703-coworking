@@ -62,22 +62,25 @@ a {
   outline: none;
   color: inherit;
 }
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 body {
   font-family: 'GothamPro', sans-serif;
   font-size: 14px;
   line-height: 1.42;
   color: #221f1f;
 }
+.wrapper {
+  min-width: 1100px;
+}
 .container {
-  max-width: 1060px;
+  width: 1060px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
-}
-.container::after {
-  content: '';
-  display: block;
-  clear: both;
 }
 .header,
 .footer,
@@ -345,7 +348,10 @@ body {
   float: left;
   color: #fff;
   font-weight: 300;
-  margin-right: 200px;
+  margin-right: 190px;
+}
+.info__text {
+  width: 260px;
 }
 .info__link {
   font-weight: 700;
