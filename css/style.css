@@ -166,6 +166,8 @@ body {
   color: rgba(236, 30, 121, 0.7);
   font-family: 'OpenSans', sans-serif;
   border-bottom: 1px solid rgba(236, 30, 121, 0.7);
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
 }
 .contacts__timework:hover {
   color: rgba(93, 209, 248, 0.7);
@@ -177,13 +179,14 @@ body {
 .contacts__popup {
   display: none;
   position: absolute;
-  top: 75px;
+  top: 77px;
   left: 38px;
   background: #ffffff;
   z-index: 5;
   padding: 15px 10px;
   border-radius: 3px;
   text-align: left;
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.2);
 }
 .contacts__popup-days {
   color: #ec1e79;
@@ -394,6 +397,8 @@ body {
 }
 .info__link {
   font-weight: 700;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
 }
 .info__link:hover {
   color: #ec1e79;
@@ -415,6 +420,8 @@ body {
   margin-right: 13px;
   background: #ffffff;
   border-radius: 50%;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
 }
 .social__item:hover {
   background: #ec1e79;
@@ -566,4 +573,110 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
+}
+.tariffs {
+  margin-bottom: 25px;
+}
+.tariffs__block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.tariffs__plane {
+  width: 252px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.tariffs__plane-img {
+  position: relative;
+  height: 155px;
+  border-radius: 3px;
+  margin-bottom: 25px;
+}
+.tariffs__plane-img--tariffs1 {
+  background: url(../image/tariffs1.jpg) center;
+}
+.tariffs__plane-img--tariffs2 {
+  background: url(../image/tariffs2.jpg) center;
+}
+.tariffs__plane-img--tariffs3 {
+  background: url(../image/tariffs3.jpg) center;
+}
+.tariffs__plane-img--tariffs4 {
+  background: url(../image/tariffs4.jpg) center;
+}
+.tariffs__plane-img--tariffs5 {
+  background: url(../image/tariffs5.jpg) center;
+}
+.tariffs__plane-img--tariffs6 {
+  background: url(../image/tariffs6.jpg) center;
+}
+.tariffs__plane-overlay {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  opacity: 0.85;
+  background-color: #27273e;
+  color: #fff;
+  -webkit-transition: .25s opacity linear;
+  transition: .25s opacity linear;
+  cursor: pointer;
+}
+.tariffs__plane-overlay:hover {
+  opacity: 0;
+}
+.tariffs__plane-title {
+  font-size: 1.714em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  color: #5dd1f8;
+}
+.tariffs__plane-vip {
+  display: block;
+  color: #ec1e79;
+}
+.tariffs__plane-head {
+  font-size: 1.286em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.tariffs__plane-text {
+  line-height: 1.4em;
+}
+.partners {
+  margin-bottom: 40px;
+}
+.partners__list {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.partners__item {
+  margin-bottom: 50px;
+  width: 290px;
+}
+.partners__link {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .25s all linear;
+  transition: .25s all linear;
+}
+.partners__link:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
