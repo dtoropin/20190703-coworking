@@ -76,9 +76,16 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
+.container-form {
+  width: 560px;
+  padding: 50px 70px;
+  margin: 0 auto;
+  background: #f0f0f0;
+}
 .header,
 .footer,
-.banner {
+.banner,
+.sentence {
   background-color: #27273e;
 }
 .header,
@@ -90,6 +97,7 @@ body {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  padding-top: 45px;
 }
 .footer {
   padding-bottom: 15px;
@@ -112,11 +120,37 @@ body {
 .content {
   width: 880px;
 }
+.feedback {
+  margin-bottom: 50px;
+}
+.btn {
+  width: 139px;
+  height: 45px;
+  background-color: #27273e;
+  border-radius: 3px;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8571em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.15s background-color linear;
+  transition: 0.15s background-color linear;
+}
+.btn:hover {
+  background-color: #ec1e79;
+}
+.btn:active {
+  box-shadow: inset 0 0 5px #5e5e5e;
+}
 .header > .container {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  padding-bottom: 10px;
 }
 .contacts {
   text-align: right;
@@ -168,9 +202,6 @@ body {
   border-width: 0 13px 14px 13px;
   border-radius: 3px;
   border-color: transparent transparent #ffffff transparent;
-}
-.banner {
-  margin-bottom: 67px;
 }
 .banner__content {
   height: 367px;
@@ -370,6 +401,9 @@ body {
 .info__link--school {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+.info__link--school:hover {
+  border-bottom: 1px solid rgba(236, 30, 121, 0.3);
+}
 .social {
   color: #fff;
 }
@@ -404,4 +438,132 @@ body {
 }
 .social__link--email {
   background: url(../image/email_icon.png) no-repeat center;
+}
+.breadcrumbs {
+  display: -webkit-box;
+  display: flex;
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.breadcrumbs__item::after {
+  content: '/';
+  margin-right: 5px;
+}
+.breadcrumbs__item:last-child::after {
+  content: '';
+}
+.breadcrumbs__link {
+  color: #ec1e79;
+  border-bottom: 1px solid #ec1e79;
+}
+.sentence {
+  font-size: 1.286em;
+  color: #fff;
+  margin-bottom: 55px;
+}
+.sentence .container {
+  background: url(../image/discount_bg.png) no-repeat center;
+}
+.sentence__text {
+  width: 630px;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 45px 0;
+}
+.sentence__discount {
+  color: #ec1e79;
+  font-weight: 700;
+}
+.feedback-form__top {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.feedback-form__top > .feedback-form__item {
+  width: 48%;
+}
+.feedback-form__item {
+  display: block;
+  margin-bottom: 20px;
+}
+.feedback-form__head {
+  display: block;
+  margin-bottom: 10px;
+}
+.feedback-form__input {
+  width: 100%;
+  outline: none;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.feedback-form__input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+.feedback-form__input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.feedback-form__input::placeholder {
+  opacity: 0.5;
+}
+.feedback-form__input--textarea {
+  resize: none;
+  height: 90px;
+}
+.feedback-form__input:focus {
+  border: 1px solid #ec1e79;
+}
+.feedback-form__bottom {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.feedback-form__bottom > .feedback-form__item {
+  margin-bottom: 0;
+}
+.feedback-form__radio-block {
+  display: -webkit-box;
+  display: flex;
+}
+.feedback-form__radio-item {
+  width: 55px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.feedback-form__radio-input {
+  display: none;
+}
+.feedback-form__radio-input:checked + .feedback-form__radio-custom {
+  border: 1px solid #ec1e79;
+}
+.feedback-form__radio-input:checked + .feedback-form__radio-custom > .feedback-form__radio-center {
+  background: #ec1e79;
+}
+.feedback-form__radio-custom {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+}
+.feedback-form__radio-custom > .feedback-form__radio-center {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
