@@ -99,15 +99,6 @@ body {
           justify-content: space-between;
   padding-top: 45px;
 }
-.footer {
-  padding-bottom: 15px;
-}
-.footer > .container {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-}
 .section-title {
   font-size: 3.5em;
   font-weight: 700;
@@ -144,6 +135,15 @@ body {
 }
 .btn:active {
   box-shadow: inset 0 0 5px #5e5e5e;
+}
+.footer {
+  padding-bottom: 15px;
+}
+.footer > .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .header > .container {
   display: -webkit-box;
