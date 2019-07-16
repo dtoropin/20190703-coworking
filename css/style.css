@@ -220,6 +220,7 @@ body {
 }
 .menu__item.active > .menu__link {
   color: #000;
+  pointer-events: none;
 }
 .menu__link {
   padding: 5px 0 5px 40px;
@@ -385,6 +386,9 @@ body {
   background-color: #27273e;
   border-radius: 3px;
   color: #ec1e79;
+}
+.pagination__item.active > .pagination__link {
+  pointer-events: none;
 }
 .pagination__link {
   display: block;
