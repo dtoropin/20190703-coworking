@@ -1,0 +1,66 @@
+.header > .container {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
+
+.contacts {
+	text-align: right;
+	position: relative;
+
+	&__phone {
+		color: #fff;
+		font-size: 1.5em;
+		font-weight: 700;
+		display: block;
+	}
+
+	&__timework {
+		color: rgba(236, 30, 121, .7);
+		font-family: 'OpenSans', sans-serif;
+		border-bottom: 1px solid rgba(236, 30, 121, .7);
+		transition: .2s all linear;
+
+		&:hover {
+			color: rgba(93, 209, 248, .7);
+			border-bottom: 1px solid rgba(93, 209, 248, .7);
+
+			& + .contacts__popup {
+				display: block;
+			}
+		}
+	}
+
+	&__popup {
+		display: none;
+		position: absolute;
+		top: 77px;
+		left: 38px;
+		background: #ffffff;
+		z-index: 5;
+		padding: 15px 10px;
+		border-radius: 3px;
+		text-align: left;
+		box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.2);
+
+		&-days {
+			color: #ec1e79;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		&::before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: -13px;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 13px 14px 13px;
+			border-radius: 3px;
+			border-color: transparent transparent #ffffff transparent;
+		}
+	}
+}

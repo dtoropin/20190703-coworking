@@ -1,0 +1,57 @@
+.features {
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__item {
+		width: 225px;
+		padding: 0 20px;
+		margin-bottom: 80px;
+	}
+
+	&__img {
+		width: 68px;
+		height: 68px;
+		border-radius: 50%;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	
+		&--flower {
+			background: url(../image/flower.png) no-repeat center, #27273e;
+		}
+		&--star {
+			background: url(../image/star.png) no-repeat center, #27273e;
+		}
+		&--palette {
+			background: url(../image/palette.png) no-repeat center, #27273e;
+		}
+	}
+
+	&__title {
+		color: #212121;
+		font-size: 0.7857em; // 11px
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 3px;
+		margin-bottom: 30px;
+	}
+
+	&__subs,
+	&__plus {
+		font-size: 1.286em; // 18px
+		margin-bottom: 18px;
+	}
+
+	&__subs {
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	&__plus::before {
+		content: "\2022";
+		color: #c36;
+		margin-right: 30px;
+	}
+}

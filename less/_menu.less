@@ -1,0 +1,49 @@
+.menu {
+	&__item {
+		color: #ec1e79;
+		font-family: 'GothamPro', sans-serif;
+		font-size: 0.8571em;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+
+		&.active  > .menu__link {
+			color: #000;
+		}
+	}
+
+	&__link {
+		padding: 5px 0 5px 40px;
+		background: url(../image/menu_icon_sprites.png);
+		background-repeat: no-repeat;
+		
+		&:hover {
+			color: #000;
+		}
+	
+		&--triangle {
+			background-position: -7px -4px;
+		}
+		&--star {
+			background-position: -7px -122px;
+		}
+		&--wallet {
+			background-position: -7px -62px;
+		}
+	}
+}
+
+.menu__item.active > .menu__link--triangle,
+.menu__link--triangle:hover {
+	background-position: -7px -33px;
+}
+
+.menu__item.active > .menu__link--star,
+.menu__link--star:hover {
+	background-position: -7px -154px;
+}
+
+.menu__item.active > .menu__link--wallet,
+.menu__link--wallet:hover {
+	background-position: -7px -92px;
+}
