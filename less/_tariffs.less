@@ -11,76 +11,63 @@
 		width: 252px;
 		text-align: center;
 		margin-bottom: 45px;
+	}
 
-		&-img {
-			position: relative;
-			height: 155px;
-			border-radius: 3px;
-			margin-bottom: 25px;
+	&__img {
+		position: relative;
+		width: 252px;
+		height: 155px;
+		border-radius: 3px;
+		margin-bottom: 25px;
+		overflow: hidden;
 
-			&--tariffs1 {
-				background: url(../image/tariffs1.jpg) center;
-			}
-			&--tariffs2 {
-				background: url(../image/tariffs2.jpg) center;
-			}
-			&--tariffs3 {
-				background: url(../image/tariffs3.jpg) center;
-			}
-			&--tariffs4 {
-				background: url(../image/tariffs4.jpg) center;
-			}
-			&--tariffs5 {
-				background: url(../image/tariffs5.jpg) center;
-			}
-			&--tariffs6 {
-				background: url(../image/tariffs6.jpg) center;
-			}
+		& > img {
+			width: 100%;
+			height: auto;
 		}
+	}
 
-		&-overlay {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 10px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			border-radius: 3px;
-			opacity: 0.85;
-			background-color: #27273e;
-			color: #fff;
-			transition: .25s opacity linear;
-			cursor: pointer;
+	&__overlay {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: 3px;
+		opacity: 0.85;
+		background-color: #27273e;
+		color: #fff;
+		transition: .25s opacity linear;
 
-			&:hover {
-				opacity: 0;
-			}
+		&:hover {
+			opacity: 0;
 		}
+	}
 
-		&-title {
-			font-size: 1.714em; // 24px
-			font-weight: 700;
-			text-transform: uppercase;
-			line-height: 1.4em;
-			color: #5dd1f8;
-		}
+	&__title {
+		font-size: 1.714em; // 24px
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1.4em;
+		color: #5dd1f8;
+	}
 
-		&-vip {
-			display: block;
-			color: #ec1e79;
-		}
+	&__vip {
+		display: block;
+		color: #ec1e79;
+	}
 
-		&-head {
-			font-size: 1.286em; // 18px
-			font-weight: 700;
-			margin-bottom: 20px;
-		}
+	&__head {
+		font-size: 1.286em; // 18px
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
 
-		&-text {
-			line-height: 1.4em;
-		}
+	&__text {
+		line-height: 1.4em;
 	}
 }
