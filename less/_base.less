@@ -15,10 +15,11 @@ body {
 	padding-left: 20px;
 
 	&-form {
-		width: 560px;
+		max-width: 560px;
 		padding: 50px 70px;
 		margin: 0 auto;
 		background: #f3f3f3;
+		box-sizing: border-box;
 	}
 }
 
@@ -26,14 +27,15 @@ body {
 	background-color: #27273e;
 }
 
-.header, .footer {
+.header {
 	padding-top: 13px;
+	padding-bottom: 10px;
 }
 
-.header > .container {
+.header > .container,
+.footer > .container {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 10px;
 }
 
 .center__block {
@@ -50,11 +52,11 @@ body {
 }
 
 .sidebar {
-	width: 180px;
+	width: 16.98%; // 180px
 }
 
 .content {
-	width: 880px;
+	width: 83.02% // 880px
 }
 
 .feedback {
@@ -62,10 +64,6 @@ body {
 }
 
 .footer {
+	padding-top: 13px;
 	padding-bottom: 15px;
-
-	& > .container {
-		display: flex;
-		justify-content: space-between;
-	}
 }
