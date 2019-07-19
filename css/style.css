@@ -283,8 +283,6 @@ body {
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-          align-items: flex-start;
   margin-bottom: 60px;
 }
 .review__img {
@@ -562,10 +560,6 @@ body {
   height: 8px;
   border-radius: 50%;
 }
-.feedback-form__buttons {
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-}
 .feedback-form__btn {
   padding: 16px 21px;
   background-color: #27273e;
@@ -580,7 +574,6 @@ body {
   text-transform: uppercase;
   -webkit-transition: 0.15s background-color linear;
   transition: 0.15s background-color linear;
-  margin-left: 20px;
 }
 .feedback-form__btn:hover {
   background-color: #ec1e79;
