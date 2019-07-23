@@ -1,14 +1,25 @@
 .menu {
+	padding-top: 9px;
+	margin-bottom: 30px;
+
+	&__list {
+		display: flex;
+	}
+
 	&__item {
 		color: #ec1e79;
 		font-family: 'GothamPro', sans-serif;
 		font-size: 0.8571em;
 		font-weight: 700;
 		text-transform: uppercase;
-		margin-bottom: 35px;
+		margin-left: 90px;
+
+		&:first-child {
+			margin-left: 0;
+		}
 
 		&.active  > .menu__link {
-			color: #000;
+			color: #221f1f;
 			pointer-events: none;
 		}
 	}
@@ -16,27 +27,28 @@
 	&__link {
 		padding: 5px 0 5px 40px;
 		letter-spacing: 1px;
+		transition: .3s color ease;
 		.iconsheet;
 		
 		&:hover {
-			color: #000;
+			color: #221f1f;
 		}
 	
 		&--triangle {
-			.icon(-10px, -173px);
+			.icon(-10px, -212px);
 		}
 		&--star {
 			.icon(-10px, -99px);
 		}
 		&--wallet {
-			.icon(-10px, -299px);
+			.icon(-10px, -373px);
 		}
 	}
 }
 
 .menu__item.active > .menu__link--triangle,
 .menu__link--triangle:hover {
-	.icon(-10px, -208px);
+	.icon(-10px, -247px);
 }
 
 .menu__item.active > .menu__link--star,
@@ -46,5 +58,46 @@
 
 .menu__item.active > .menu__link--wallet,
 .menu__link--wallet:hover {
-	.icon(-10px, -335px);
+	.icon(-10px, -409px);
+}
+
+.menu--main {
+	.menu__item {
+		color: #fff;
+
+		&.active  > .menu__link {
+			color: #ec1e79;
+		}
+	}
+
+	.menu__link {
+		&:hover {
+			color: #ec1e79;
+		}
+
+		&--triangle {
+			.icon(-10px, -282px);
+		}
+		&--star {
+			.icon(-10px, -175px);
+		}
+		&--wallet {
+			.icon(-10px, -445px);
+		}
+	}
+
+	.menu__item.active > .menu__link--triangle,
+	.menu__link--triangle:hover {
+		.icon(-10px, -212px);
+	}
+
+	.menu__item.active > .menu__link--star,
+	.menu__link--star:hover {
+		.icon(-10px, -99px);
+	}
+
+	.menu__item.active > .menu__link--wallet,
+	.menu__link--wallet:hover {
+		.icon(-10px, -373px);
+	}
 }

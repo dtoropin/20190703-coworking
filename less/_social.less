@@ -1,5 +1,5 @@
 .social {
-	color: #fff;
+	text-align: center;
 
 	&__title {
 		margin-bottom: 7px;
@@ -7,10 +7,13 @@
 
 	&__item {
 		display: inline-block;
-		margin-right: 13px;
-		background: #ffffff;
+		margin-left: 15px;
 		border-radius: 50%;
 		transition: .2s all linear;
+
+		&:first-child {
+			margin-left: 0;
+		}
 
 		&:hover {
 			background: #ec1e79;
@@ -24,7 +27,7 @@
 		.iconsheet;
 
 		&--vk {
-			.icon(-6px, -269px);
+			.icon(-6px, -342px);
 		}
 
 		&--fb {
@@ -32,11 +35,11 @@
 		}
 
 		&--gplus {
-			.icon(-7px, -67px);
+			.icon(-7px, -66px);
 		}
 
 		&--tw {
-			.icon(-6px, -241px);
+			.icon(-6px, -314px);
 		}
 
 		&--email {
