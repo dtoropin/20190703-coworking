@@ -12,7 +12,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="container">
+			<div class="container container--flex">
 				<a href="main.html" class="logo">
 					<img src="image/logo.png" alt="Лого Воркадиум" class="logo__img">
 				</a>
@@ -20,7 +20,7 @@
 				<address class="contacts">
 					<a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
 					<div class="contacts__timework">
-						График работы
+						<a href="javascript:void(0);" class="contacts__link">График работы</a>
 						<div class="contacts__popup">
 							<div class="contacts__popup-block">
 								<div class="contacts__popup-days">пн-вс: 09:00-20:00</div>
@@ -32,10 +32,10 @@
 			</div><!-- .container -->
 		</header>
 
-		<div class="container center__block">
+		<div class="container container--flex">
 			<aside class="sidebar">
 				<section class="partners">
-					<h3 class="partners__head">Партнёры</h3>
+					<h3 class="aside-title">Партнёры</h3>
 
 					<ul class="partners__list">
 						<li class="partners__item">
@@ -112,7 +112,7 @@
 				<section class="tariffs">
 					<h1 class="section-title">Тарифы</h1>
 
-					<ul class="tariffs__block">
+					<ul class="tariffs__block container--flex">
 						<li class="tariffs__plane">
 							<div class="tariffs__img">
 								<img src="image/tariffs1.jpg" alt="Тариф Один">
@@ -212,7 +212,7 @@
 		</div><!-- .container -->
 
 		<footer class="footer">
-			<div class="container">
+			<div class="container container--flex">
 				<div class="info">
 					<p class="info__text">
 						Сделано с любовью и старанием на курсе «HTML + CSS» в

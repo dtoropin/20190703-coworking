@@ -22,6 +22,11 @@ body {
 	padding-right: 20px;
 	padding-left: 20px;
 
+	&--flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	&-form {
 		max-width: 767px;
 		padding: 50px 70px;
@@ -38,19 +43,11 @@ body {
 .header {
 	padding-top: 13px;
 	padding-bottom: 10px;
-}
+	margin-bottom: 35px;
 
-.header > .container,
-.footer > .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.center__block {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 35px;
+	&--main {
+		margin-bottom: 0;
+	}
 }
 
 .section-title {
@@ -66,6 +63,13 @@ body {
 
 .sidebar {
 	width: 23.71%; // 275px
+}
+
+.aside-title {
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
 .content {
