@@ -3,7 +3,7 @@
 		"main": ["${workspaceRoot}\\less\\index.less"],
 		"compress":  false,
     "sourceMap": false,
-		"out": "${workspaceRoot}\\css\\style.min.css",
+		"out": "${workspaceRoot}\\css\\style.css",
 		"autoprefixer": "> 1%"
 	}
 }
