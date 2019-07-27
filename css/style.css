@@ -267,6 +267,10 @@ body {
 .header--main {
   margin-bottom: 0;
 }
+.logo:not(.logo--main):hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
 .section-title {
   font-size: 3.5em;
   font-weight: 700;
@@ -404,6 +408,11 @@ body {
   font-weight: 700;
   display: block;
   line-height: 1.4;
+  -webkit-transition: .3s color ease;
+  transition: .3s color ease;
+}
+.contacts__phone:hover {
+  color: rgba(236, 30, 121, 0.7);
 }
 .contacts__link {
   color: rgba(236, 30, 121, 0.7);
@@ -842,8 +851,8 @@ body {
   height: 18px;
   border-radius: 50%;
   border: 1px solid #c9c9c9;
-  -webkit-transition: .3s color ease;
-  transition: .3s color ease;
+  -webkit-transition: 0.3s border-color ease;
+  transition: 0.3s border-color ease;
 }
 .feedback-form__radio-custom > .feedback-form__radio-center {
   position: absolute;
@@ -946,7 +955,9 @@ body {
 .partners__list {
   display: -webkit-box;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   -webkit-box-pack: center;
           justify-content: center;
   -webkit-box-align: center;
