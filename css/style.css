@@ -507,36 +507,67 @@ body {
   pointer-events: none;
 }
 .menu__link {
+  position: relative;
   padding: 5px 0 5px 40px;
   letter-spacing: 1px;
   -webkit-transition: .3s color ease;
   transition: .3s color ease;
+}
+.menu__link::after,
+.menu__link::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
   background-image: url(../image/spritesheet.png);
   background-repeat: no-repeat;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+  -webkit-transition: .3s opacity ease;
+  transition: .3s opacity ease;
 }
 .menu__link:hover {
   color: #221f1f;
 }
-.menu__link--triangle {
+.menu__link--triangle::before {
   background-position: -10px -212px;
 }
-.menu__link--star {
-  background-position: -10px -99px;
-}
-.menu__link--wallet {
-  background-position: -10px -373px;
-}
-.menu__item.active > .menu__link--triangle,
-.menu__link--triangle:hover {
+.menu__link--triangle::after {
+  opacity: 0;
   background-position: -10px -247px;
 }
-.menu__item.active > .menu__link--star,
-.menu__link--star:hover {
+.menu__link--star::before {
+  background-position: -10px -99px;
+}
+.menu__link--star::after {
+  opacity: 0;
   background-position: -10px -137px;
 }
-.menu__item.active > .menu__link--wallet,
-.menu__link--wallet:hover {
+.menu__link--wallet::before {
+  background-position: -10px -373px;
+}
+.menu__link--wallet::after {
+  opacity: 0;
   background-position: -10px -409px;
+}
+.menu__item.active > .menu__link--triangle::after,
+.menu__link--triangle:hover::after,
+.menu__item.active > .menu__link--star::after,
+.menu__link--star:hover::after,
+.menu__item.active > .menu__link--wallet::after,
+.menu__link--wallet:hover::after {
+  opacity: 1;
+}
+.menu__item.active > .menu__link--triangle::before,
+.menu__link--triangle:hover::before,
+.menu__item.active > .menu__link--star::before,
+.menu__link--star:hover::before,
+.menu__item.active > .menu__link--wallet::before,
+.menu__link--wallet:hover::before {
+  opacity: 0;
 }
 .menu--main {
   margin-bottom: 0;
@@ -550,25 +581,22 @@ body {
 .menu--main .menu__link:hover {
   color: #ec1e79;
 }
-.menu--main .menu__link--triangle {
+.menu--main .menu__link--triangle::before {
   background-position: -10px -282px;
 }
-.menu--main .menu__link--star {
-  background-position: -10px -175px;
-}
-.menu--main .menu__link--wallet {
-  background-position: -10px -445px;
-}
-.menu--main .menu__item.active > .menu__link--triangle,
-.menu--main .menu__link--triangle:hover {
+.menu--main .menu__link--triangle::after {
   background-position: -10px -212px;
 }
-.menu--main .menu__item.active > .menu__link--star,
-.menu--main .menu__link--star:hover {
+.menu--main .menu__link--star::before {
+  background-position: -10px -175px;
+}
+.menu--main .menu__link--star::after {
   background-position: -10px -99px;
 }
-.menu--main .menu__item.active > .menu__link--wallet,
-.menu--main .menu__link--wallet:hover {
+.menu--main .menu__link--wallet::before {
+  background-position: -10px -445px;
+}
+.menu--main .menu__link--wallet::after {
   background-position: -10px -373px;
 }
 .features {

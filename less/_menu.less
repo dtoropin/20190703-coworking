@@ -25,40 +25,75 @@
 	}
 
 	&__link {
+		position: relative;
 		padding: 5px 0 5px 40px;
 		letter-spacing: 1px;
 		transition: .3s color ease;
-		.iconsheet;
+
+		&::after,
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			.iconsheet;
+			transform: translateY(-60%);
+			transition: .3s opacity ease;
+		}
 		
 		&:hover {
 			color: #221f1f;
 		}
 	
 		&--triangle {
-			.icon(-10px, -212px);
+			&::before {
+				.icon(-10px, -212px);
+			}
+			&::after {
+				opacity: 0;
+				.icon(-10px, -247px);
+			}
 		}
 		&--star {
-			.icon(-10px, -99px);
+			&::before {
+				.icon(-10px, -99px);
+			}
+			&::after {
+				opacity: 0;
+				.icon(-10px, -137px);
+			}
 		}
 		&--wallet {
-			.icon(-10px, -373px);
+			&::before {
+				.icon(-10px, -373px);
+			}
+			&::after {
+				opacity: 0;
+				.icon(-10px, -409px);
+			}
 		}
 	}
 }
 
-.menu__item.active > .menu__link--triangle,
-.menu__link--triangle:hover {
-	.icon(-10px, -247px);
+.menu__item.active > .menu__link--triangle::after,
+.menu__link--triangle:hover::after,
+.menu__item.active > .menu__link--star::after,
+.menu__link--star:hover::after,
+.menu__item.active > .menu__link--wallet::after,
+.menu__link--wallet:hover::after {
+	opacity: 1;
 }
 
-.menu__item.active > .menu__link--star,
-.menu__link--star:hover {
-	.icon(-10px, -137px);
-}
-
-.menu__item.active > .menu__link--wallet,
-.menu__link--wallet:hover {
-	.icon(-10px, -409px);
+.menu__item.active > .menu__link--triangle::before,
+.menu__link--triangle:hover::before,
+.menu__item.active > .menu__link--star::before,
+.menu__link--star:hover::before,
+.menu__item.active > .menu__link--wallet::before,
+.menu__link--wallet:hover::before {
+	opacity: 0;
 }
 
 .menu--main {
@@ -78,28 +113,28 @@
 		}
 
 		&--triangle {
-			.icon(-10px, -282px);
+			&::before {
+				.icon(-10px, -282px);
+			}
+			&::after {
+				.icon(-10px, -212px);
+			}
 		}
 		&--star {
-			.icon(-10px, -175px);
+			&::before {
+				.icon(-10px, -175px);
+			}
+			&::after {
+				.icon(-10px, -99px);
+			}
 		}
 		&--wallet {
-			.icon(-10px, -445px);
+			&::before {
+				.icon(-10px, -445px);
+			}
+			&::after {
+				.icon(-10px, -373px);
+			}
 		}
-	}
-
-	.menu__item.active > .menu__link--triangle,
-	.menu__link--triangle:hover {
-		.icon(-10px, -212px);
-	}
-
-	.menu__item.active > .menu__link--star,
-	.menu__link--star:hover {
-		.icon(-10px, -99px);
-	}
-
-	.menu__item.active > .menu__link--wallet,
-	.menu__link--wallet:hover {
-		.icon(-10px, -373px);
 	}
 }
